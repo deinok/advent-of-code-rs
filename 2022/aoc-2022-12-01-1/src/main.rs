@@ -1,10 +1,11 @@
-use std::io::{Error};
+use std::io::{Error, Lines};
 use std::num::ParseIntError;
-use std::str::Lines;
 
 fn main() {
-    let lines = include_str!("./input.txt")
+    let result = include_str!("./input.txt")
         .split("\n\n")
-        .collect::<Vec<&str>>();
-    println!("{}", 1)
+        .map(|x| x.split("\n").filter_map(|y|y.parse::<u32>().ok()).sum::<u32>())
+        .max()
+        .unwrap();
+    println!("{}", result)
 }
