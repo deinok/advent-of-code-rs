@@ -1,6 +1,7 @@
 [workspace]
 members = [
-    "2022/aoc-2022-12-01-1"
+    "2022/aoc-2022-12-01-1",
+    "2022/aoc-2022-12-01-2"
 ]
 
 [workspace.package]
