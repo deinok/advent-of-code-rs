@@ -1,0 +1,4 @@
+[package]
+edition.workspace = true
+name = "aoc-2022-12-01-1"
+version.workspace = true
